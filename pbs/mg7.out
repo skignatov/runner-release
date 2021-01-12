@@ -1,0 +1,361 @@
+             *******************************************************
+             *                    RUNNER v.0.1                     *
+             *               (build number   703)                  *
+             *                                                     *
+             *        GLOBAL OPTIMIZATION USING QC METHODS         *
+             *                                                     *
+             *      Originally written by Stanislav Ignatov        *
+             *          Theoretical Chemistry Group                *
+             * N.I.Lobachevsky State University of Nizhny Novgorod *
+             *                 ignatov@ichem.unn.ru                *
+             *               http://ichem.unn.ru/tcg               *
+             *             Nizhny Novgorod, Russia, 2020           *
+             *******************************************************
+
+
+
+ Date:13/11/2020                                              Time:15:02:16.89
+
+ Keyword found:  Stoichiometry=Mg7
+ Keyword found:  NSTRUCT=10
+ Keyword found:  MAXCYC=1000000
+ Keyword found:  FilPat=mg.gj0
+ Keyword found:  Server=g09
+ Keyword found:  IDLE=2
+ Keyword found:  NOAUTOSTART
+ Keyword found:  MAXRESTARTS=10
+ Keyword found:  MAXPOOL=50
+ Keyword found:  MINPOOL=10
+ Keyword found:  ACTIVEPOOL=0.7
+ Keyword found:  MAXTRY=5000
+ Keyword found:  BONDLIMITS=(1.,3.8)
+ Keyword found:  SPHERE=6.
+ Keyword found:  INIT=(RND1=10,RAND=10)
+ Keyword found:  OPERATORS=(PCCR=50,RAND=10,RND1=10,TPCR=20,IMOV=10)
+
+ Program will operate in BATCH_CRON mode.
+
+ *** System to be optimized ***
+ Stoichiometry  :Mg7
+ Number of atoms:    7
+ Atom kinds     :    1
+
+ Random Number seeds:           669540271          2122709746
+
+ Rbond    =     2.4000
+ RbondMin =     1.0000
+ RbondMax =     3.8000
+ RXsphere =     6.0000
+
+ ConnLim  =     1.1500 (two atoms are considered bonded if Rab<(Ra+Rb)*ConnLim ): 
+
+
+ Creation Operators will be used with the following probabilities:
+ i  Operator   InitPhase   MainPhase     Description
+ 1    RAND        0.50 *      0.10 *     Random structure
+ 2    PCCR        0.00        0.50 *     Plane-cut-splice crossover
+ 3    TPCR        0.00        0.20 *     Two-point crossover
+ 4    IMOV        0.00        0.10 *     Internal move - moving distant atoms toward center of masses
+ 5    AMOV        0.00        0.00       Angular  move - rotation distant atom by random angle/axis
+ 6    TWST        0.00        0.00       Twist operator - cut structure and twist two parts by random angle
+ 7    ABAU        0.00        0.00       Aufbau build - adding single atom to a known structure at random position
+ 8    RND1        0.50 *      0.10 *     Random structure constructed using the "condensation" method
+ 9    HINT        0.00        0.00       Hint operator - adding known structure found earlier or built manually
+
+
+ Number of structures to be optimized:    10
+ Number of structures in a pool      :    50
+ Number of structures at INIT PHASE  :    10
+ Fraction of active pool structures  :  0.70
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 0  iContinuation              0  iRun                       0  iPrint6                    1
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+
+
+   Cycle  Submit  Opera Parent Try  Restar  Proces   StrGeo  Optimi   Pool    Emin           Imin      Emin         Time     Date
+            ted    tor               ted     sed      base     zed     str    (all)          (all)    (pool)        hh:mm:ss DD/MM
+
+ *** INIT PHASE -- Generation of initial population
+       1       1  RND1  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:17 13/11
+       2       2  RAND  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:17 13/11
+       3       3  RND1  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:17 13/11
+       4       4  RND1  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:17 13/11
+       5       5  RND1  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:17 13/11
+       6       6  RND1  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:17 13/11
+       7       7  RND1  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:19 13/11
+       8       8  RAND  0  0   2       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:22 13/11
+       9       9  RAND  0  0   1       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:24 13/11
+      10      10  RAND  0  0  10       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:26 13/11
+      11      10  RAND  0  0  10       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:28 13/11
+      12      10  RAND  0  0  10       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:31 13/11
+      13      10  RAND  0  0  10       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:33 13/11
+      14      10  RAND  0  0  10       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:35 13/11
+      15      10  RAND  0  0  10       0       0         0       0       0 999999.00000000       0 999999.00000000  15:02:37 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       1  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+      16      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:38 13/11
+      17      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:40 13/11
+      18      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:42 13/11
+      19      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:45 13/11
+      20      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:47 13/11
+      21      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:49 13/11
+      22      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:51 13/11
+      23      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:53 13/11
+      24      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:56 13/11
+      25      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:19:58 13/11
+      26      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:20:00 13/11
+      27      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:20:02 13/11
+      28      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:20:05 13/11
+      29      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:20:07 13/11
+      30      10  RAND  0  0   0       5       5       162       0       0  -1400.57871354     162 999999.00000000  15:20:09 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       2  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+      31      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:01 13/11
+      32      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:03 13/11
+      33      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:05 13/11
+      34      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:07 13/11
+      35      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:10 13/11
+      36      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:12 13/11
+      37      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:14 13/11
+      38      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:16 13/11
+      39      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:18 13/11
+      40      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:21 13/11
+      41      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:23 13/11
+      42      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:25 13/11
+      43      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:27 13/11
+      44      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:29 13/11
+      45      10  RAND  0  0   0       7       2       237       0       0  -1400.58048539     237 999999.00000000  15:26:32 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       3  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+      46      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:43 13/11
+      47      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:45 13/11
+      48      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:47 13/11
+      49      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:49 13/11
+      50      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:53 13/11
+      51      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:56 13/11
+      52      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:31:58 13/11
+      53      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:00 13/11
+      54      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:02 13/11
+      55      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:04 13/11
+      56      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:06 13/11
+      57      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:08 13/11
+      58      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:10 13/11
+      59      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:13 13/11
+      60      10  RAND  0  0   0       8       1       264       0       0  -1400.58048539     237 999999.00000000  15:32:15 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       4  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+      61      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:31 13/11
+      62      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:34 13/11
+      63      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:36 13/11
+      64      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:38 13/11
+      65      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:40 13/11
+      66      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:42 13/11
+      67      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:46 13/11
+      68      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:48 13/11
+      69      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:50 13/11
+      70      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:52 13/11
+      71      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:55 13/11
+      72      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:57 13/11
+      73      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:37:59 13/11
+      74      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:38:01 13/11
+      75      10  RAND  0  0   0       9       6       456       5       4  -1400.58357191     454  -1400.58356936  15:38:03 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       5  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+      76      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:12 13/11
+      77      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:17 13/11
+      78      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:19 13/11
+      79      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:21 13/11
+      80      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:23 13/11
+      81      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:26 13/11
+      82      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:28 13/11
+      83      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:30 13/11
+      84      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:32 13/11
+      85      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:34 13/11
+      86      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:37 13/11
+      87      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:39 13/11
+      88      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:41 13/11
+      89      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:43 13/11
+      90      10  RAND  0  0   0      10       2       536       6       4  -1400.58357200     454  -1400.58356936  15:43:48 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       6  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+      91      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:48:52 13/11
+      92      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:48:54 13/11
+      93      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:48:56 13/11
+      94      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:48:59 13/11
+      95      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:01 13/11
+      96      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:03 13/11
+      97      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:05 13/11
+      98      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:07 13/11
+      99      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:09 13/11
+     100      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:11 13/11
+     101      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:13 13/11
+     102      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:16 13/11
+     103      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:18 13/11
+     104      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:20 13/11
+     105      10  RAND  0  0   0      10       2       548       8       4  -1400.58357200     454  -1400.58356936  15:49:22 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       7  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+     106      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:27 13/11
+     107      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:29 13/11
+     108      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:31 13/11
+     109      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:33 13/11
+     110      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:36 13/11
+     111      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:38 13/11
+     112      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:40 13/11
+     113      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:42 13/11
+     114      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:44 13/11
+     115      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:47 13/11
+     116      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:49 13/11
+     117      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:51 13/11
+     118      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:53 13/11
+     119      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:55 13/11
+     120      10  RAND  0  0   0      10       1       568       9       4  -1400.58357200     454  -1400.58356936  15:54:58 13/11
+eo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       8  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+     120      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:54:58 13/11
+     121      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:00 13/11
+     122      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:02 13/11
+     123      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:05 13/11
+     124      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:07 13/11
+     125      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:09 13/11
+     126      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:12 13/11
+     127      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:14 13/11
+     128      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:16 13/11
+     129      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:18 13/11
+     130      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:20 13/11
+     131      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:23 13/11
+     132      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:25 13/11
+     133      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:27 13/11
+     134      10  RAND  0  0   0      10       0       568       9       4  -1400.58357200     454  -1400.58356936  15:55:29 13/11
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                   110  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   4  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    2
+ IdleTime                   2  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 1  iContinuation              0  iRun                       9  iPrint6                    0
+ iCronRestart               0  iServerProgram             0  Nstruct                   10  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.4000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              3.8000  EnergyGoal         -0.10+106  iSphereSet                 1
+     135      10  RAND  0  0   0      10       1       580      10       4  -1400.58357200     454  -1400.58356936  16:00:33 13/11
+
+
+ All structures are successfully optimized. 
+
+
+ ***** RESULTS *****
+ Structures to be explored   :      10
+ Generated structures        :      10
+ Optimized structures (LMs)  :      10
+ Explored geometries         :     580   (about    58 cycles per optimization)
+ Pool structures (unique LMs):       4 of maximum pool:      50
+
+
+ *** STRUCTURES ANALYSIS ***
+ Energy of minimum           :       -1400.583569360000
+ Minimum structure           :       5     456
+ Structure diameter          :      5.3955
+ Average interatomic distance  in pool:      4.0642
+ Average structure diameter    in pool:      6.7813
+ Average RbondMin of all atoms in pool:      3.0886  (assumed RbondMin:      1.0000  RbondMax:      3.8000
+
+
+ *** OPERATORS STATISTICS ***
+ i  Operator Used   Success  Small     P(used)    P(sucess)   P(small)    Rating
+ 1  RAND       4       4       1        0.40        1.00        1.00        1.00
+ 8  RND1       6       0       0        0.60        0.00        0.00        0.00
+
+
+ *** TIMINGS ***
+                                              sec         min         hrs
+ Total calculation time             :        1.00        0.02        0.00
+ Time for single optimized structure:        0.10        0.00        0.00
+ Time for single explored geometry  :        0.00        0.00        0.00
+ Time for single pool structure     :        0.25        0.00        0.00
+
+
+ Date:13/11/2020                                              Time:16:00:33.12
+
+ Calculation time:      1.00 sec   =     0.02 min   =   0.00 hrs  =  0.00 days
+
+
+ ERROR! Previous finished job was found in the WorkDir. Use CONTINUE command for continuation.

@@ -1,0 +1,155 @@
+             *******************************************************
+             *                    RUNNER v.0.1                     *
+             *               (build number   702)                  *
+             *                                                     *
+             *        GLOBAL OPTIMIZATION USING QC METHODS         *
+             *                                                     *
+             *      Originally written by Stanislav Ignatov        *
+             *          Theoretical Chemistry Group                *
+             * N.I.Lobachevsky State University of Nizhny Novgorod *
+             *                 ignatov@ichem.unn.ru                *
+             *               http://ichem.unn.ru/tcg               *
+             *             Nizhny Novgorod, Russia, 2020           *
+             *******************************************************
+
+
+
+ Date:16/08/2020                                              Time:14:14:10.54
+
+ Keyword found:  Stoichiometry=Mg7
+ Keyword found:  NSTRUCT=24
+ Keyword found:  FilPat=mg-tight-freq.gj0
+ Keyword found:  Server=g09
+ Keyword found:  IDLE=10
+ Keyword found:  NOAUTOSTART
+ Keyword found:  MAXRESTARTS=10
+ Keyword found:  MAXPOOL=50
+ Keyword found:  MINPOOL=10
+ Keyword found:  ACTIVEPOOL=0.7
+ Keyword found:  MAXTRY=5000
+ Keyword found:  BONDLIMITS=(1.,4.)
+ Keyword found:  SPHERE=6.
+ Keyword found:  INIT=(RND1=10,RAND=10)
+ Keyword found:  OPERATORS=(PCCR=50,RAND=10,RND1=10,TPCR=20,IMOV=10)
+
+ Program will operate in SERIAL mode.
+
+ *** System to be optimized ***
+ Stoichiometry  :Mg7
+ Number of atoms:    7
+ Atom kinds     :    1
+
+ Random Number seeds:           360406841          1471542161
+
+ Rbond    =     2.5000
+ RbondMin =     1.0000
+ RbondMax =     4.0000
+ RXsphere =     6.0000
+
+ ConnLim  =     1.1500 (two atoms are considered bonded if Rab<(Ra+Rb)*ConnLim ): 
+
+
+ Creation Operators will be used with the following probabilities:
+ i  Operator   InitPhase   MainPhase     Description
+ 1    RAND        0.50 *      0.10 *     Random structure
+ 2    PCCR        0.00        0.50 *     Plane-cut-splice crossover
+ 3    TPCR        0.00        0.20 *     Two-point crossover
+ 4    IMOV        0.00        0.10 *     Internal move - moving distant atoms toward center of masses
+ 5    AMOV        0.00        0.00       Angular  move - rotation distant atom by random angle/axis
+ 6    TWST        0.00        0.00       Twist operator - cut structure and twist two parts by random angle
+ 7    ABAU        0.00        0.00       Aufbau build - adding single atom to a known structure at random position
+ 8    RND1        0.50 *      0.10 *     Random structure constructed using the "condensation" method
+ 9    HINT        0.00        0.00       Hint operator - adding known structure found earlier or built manually
+
+
+ Number of structures to be optimized:    24
+ Number of structures in a pool      :    50
+ Number of structures at INIT PHASE  :    10
+ Fraction of active pool structures  :  0.70
+
+ *** Global options in effect: ***
+ MaxAt                     50  MaxStr                  1000  MaxFiles                 100  MaxGeo                200000
+ MaxPool                   50  MaxJobsReadyLimit         10  NpoolMin                  10  NpoolMax                  50
+ iRunMode                   1  MaxMainCyc           1000000  MaxMainCycPerRun          15  MaxRestarts               10
+ MaxTry                  5000  iSaveArchive               1  iRebuildPool               0  iOStype                    1
+ IdleTime                  10  iAutoStart                 0  iRbondSet                  2  iSphereSet                 1
+ iLastState                 0  iContinuation              0  iRun                       0  iPrint6                    1
+ iCronRestart               0  iServerProgram             0  Nstruct                   24  iRbondSet                  2
+ ActivePool            0.7000  RXsphere              6.0000  Rbond                 2.5000  rConnLimit            1.1500
+ RbondMin              1.0000  RbondMax              4.0000  EnergyGoal         -0.10+106  iSphereSet                 1
+
+
+   Cycle  Submit  Opera Parent Try  Restar  Proces   StrGeo  Optimi   Pool    Emin           Imin      Emin         Time     Date
+            ted    tor               ted     sed      base     zed     str    (all)          (all)    (pool)        hh:mm:ss DD/MM
+
+ *** INIT PHASE -- Generation of initial population
+ File geo-000001-00.gjf was generated using "hint" geo   1 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000002-00.gjf was generated using "hint" geo   2 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000003-00.gjf was generated using "hint" geo   3 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000004-00.gjf was generated using "hint" geo   4 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000005-00.gjf was generated using "hint" geo   5 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000006-00.gjf was generated using "hint" geo   6 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000007-00.gjf was generated using "hint" geo   7 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000008-00.gjf was generated using "hint" geo   8 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000009-00.gjf was generated using "hint" geo   9 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000010-00.gjf was generated using "hint" geo  10 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000011-00.gjf was generated using "hint" geo  11 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000012-00.gjf was generated using "hint" geo  12 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000013-00.gjf was generated using "hint" geo  13 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000014-00.gjf was generated using "hint" geo  14 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000015-00.gjf was generated using "hint" geo  15 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000016-00.gjf was generated using "hint" geo  16 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000017-00.gjf was generated using "hint" geo  17 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000018-00.gjf was generated using "hint" geo  18 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000019-00.gjf was generated using "hint" geo  19 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000020-00.gjf was generated using "hint" geo  20 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000021-00.gjf was generated using "hint" geo  21 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000022-00.gjf was generated using "hint" geo  22 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000023-00.gjf was generated using "hint" geo  23 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ File geo-000024-00.gjf was generated using "hint" geo  24 of XYZ-file from ADD directory: mg7-500-24classes.xyz
+ Hint file mg7-500-24classes.xyz was moved to USD directory
+       1      24  HINT  0  0   0       0       0         0       0       0 999999.00000000       0 999999.00000000  17:24:34 16/08
+       2      24  HINT  0  0   0      15      24       484       9       6  -1400.58364616       7  -1400.58364610  18:22:51 16/08
+       3      24  HINT  0  0   0      26      39       630      13       8  -1400.58364616       7  -1400.58364610  19:02:57 16/08
+       4      24  HINT  0  0   0      31      50       729      19       9  -1400.58364616       7  -1400.58364610  19:35:28 16/08
+ *** MAIN PHASE -- Generation of new populations using active pool
+       5      24  HINT  0  0   0      34      55       812      21      10  -1400.58364616       7  -1400.58364610  20:01:46 16/08
+       6      24  HINT  0  0   0      35      58       874      23      10  -1400.58364616       7  -1400.58364613  20:07:00 16/08
+       7      24  HINT  0  0   0      35      59       886      24      10  -1400.58364616       7  -1400.58364613  20:07:00 16/08
+
+
+ All structures are successfully optimized. 
+
+
+ ***** RESULTS *****
+ Structures to be explored   :      24
+ Generated structures        :      24
+ Optimized structures (LMs)  :      24
+ Explored geometries         :     886   (about    36 cycles per optimization)
+ Pool structures (unique LMs):      10 of maximum pool:      50
+
+
+ *** STRUCTURES ANALYSIS ***
+ Energy of minimum           :       -1400.583646130000
+ Minimum structure           :      23     870
+ Structure diameter          :      5.3952
+ Average interatomic distance  in pool:      4.2871
+ Average structure diameter    in pool:      7.3891
+ Average RbondMin of all atoms in pool:      3.0978  (assumed RbondMin:      1.0000  RbondMax:      4.0000
+
+
+ *** OPERATORS STATISTICS ***
+ i  Operator Used   Success  Small     P(used)    P(sucess)   P(small)    Rating
+
+
+ *** TIMINGS ***
+                                              sec         min         hrs
+ Total calculation time             :    21170.07      352.83        5.88
+ Time for single optimized structure:      882.09       14.70        0.25
+ Time for single explored geometry  :       23.89        0.40        0.01
+ Time for single pool structure     :     2117.01       35.28        0.59
+
+
+ Date:16/08/2020                                              Time:20:07:00.61
+
+ Calculation time:  21170.07 sec   =   352.83 min   =   5.88 hrs  =  0.25 days

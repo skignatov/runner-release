@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -J %%%
+#SBATCH -o %%%.o%j
+#SBATCH -e %%%.e%
+#SBATCH -p skx-dev
+#SBATCH -N 1
+#SBATCH -n 48
+#SBATCH -t 02:00:00
+##SBATCH --mail-user=ignatov@ichem.unn.ru
+##SBATCH --mail-type=all
+##SBATCH -A myproject
+
+module load gaussian/16rA.03
+
+InputFile=@@@
+
+###
+#inpfile=$PWD/$InputFile.gjf
+#outfile=$PWD/$InputFile.$$.log
+
+g16 ${InputFile}
+

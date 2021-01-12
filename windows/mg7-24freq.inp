@@ -1,0 +1,27 @@
+# Stoichiometry=Mg7   Nstruct=24
+# Server=g09 FilPat=mg-tight-freq.gj0   Idle=10  NoAutoStart
+
+!# Server=globus-r5512-win32.exe   FilPat=job_pattern_globus.in0 
+!# SEED=(674127515,48622252)
+
+
+!# SEED=(674127515,48622252)
+!# SEED=(1921998492,687204807)
+!# SEED=(1605328632,497)
+
+# MaxPool=50 ActivePool=0.7 MinPool=10  MaxRestarts=10 ! RebuildPool ! NoSaveArchive
+
+# BondLIMIts=(1.,4.) Sphere=6.  MaxTry=5000
+
+
+# Init=(RND1=10,RAND=10)
+# Operators=(PCCR=50,RAND=10,RND1=10,TPCR=20,IMOV=10)
+
+!# HintFiles
+pt25.hint
+
+!# ABAUfiles
+a1.out
+a2.out
+a3.out
+

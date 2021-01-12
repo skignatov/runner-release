@@ -1,0 +1,8 @@
+%chk=mg.chk
+%NoSave%
+# bp86/6-31G(d) FOpt SCF=(xqc,MaxCycle=100)
+
+gjf-pattern file
+
+0 1
+%GEO%

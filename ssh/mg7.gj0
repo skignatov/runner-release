@@ -1,0 +1,10 @@
+%NProc=4
+%Mem=6000MB
+%chk=geo.chk
+# bp86/6-31G(d,p) Fopt=(Cartesian,MaxCycle=100) GFprint GFinput SCF=(xqc,MaxCycle=300)
+ 
+gjf-pattern file
+ 
+0 1
+%GEO%
+ 

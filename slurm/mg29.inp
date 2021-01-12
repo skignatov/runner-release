@@ -1,0 +1,24 @@
+# Stoichiometry=Mg29   Nstruct=100 MaxCyc=1000000
+# Server=g09 FilPat=mg.gj0   Idle=2  NoAutoStart RunMode=SSH
+
+!# Server=globus-r5512-win32.exe   FilPat=job_pattern_globus.in0 
+!# SEED=(674127515,48622252)
+
+
+!# SEED=(674127515,48622252)
+!# SEED=(1921998492,687204807)
+!# SEED=(1605328632,497)
+
+# MaxPool=50 ActivePool=0.7 MinPool=10  MaxRestarts=10 ! RebuildPool ! NoSaveArchive
+
+# BondLIMIts=(1.,3.8) Sphere=7.5  MaxTry=5000
+
+
+# Init=(RND1=10,RAND=10)
+# Operators=(PCCR=50,RAND=10,RND1=10,TPCR=20,IMOV=10)
+
+!# ABAUfiles
+!a1.out
+!a2.out
+!a3.out
+

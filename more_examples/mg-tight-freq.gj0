@@ -1,0 +1,10 @@
+%NProc=4
+%Mem=6000MB
+%chk=geo.chk
+# bp86/6-31G(d,p) Fopt=(Cartesian,Tight,MaxCycle=300) Freq SCF=(xqc,MaxCycle=300) Int(Grid=UltraFine)
+ 
+gjf-pattern file
+ 
+0 1
+%GEO%
+ 

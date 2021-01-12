@@ -1,0 +1,14 @@
+# ip         Active  User     Nproc   Mem    Prog    Dir
+85.14.15.29   1    user1     4   16000MB   g16    /home/user1/Documents/gwork     # 0
+85.14.15.10   1    user1     4   16000MB   g16    /home/user1/Documents/gwork     # 1
+85.14.15.25   1    student   4   16000MB   g16    /srv1/gwork                     # 2
+85.14.15.28   1    student   4   16000MB   g16    /home/student/Documents/gwork   # 3
+85.14.15.27   1    student   4   12000MB   g09    /home/student/Documents/gwork   # 4
+85.14.15.23   1    student   8    6000MB   g09    /home/student/Documents/gwork   # 5
+85.14.15.17   1    student   4    6000MB   g16    /srv1/gwork                     # 6
+85.14.15.15   1    student   4    6000MB   g09    /home/student/Documents/gwork   # 7
+85.14.15.21   1    student   4    6000MB   g09    /home/student/Documents/gwork   # 8
+85.14.15.24   1    student   4    6000MB   g09    /home/student/Documents/gwork   # 9
+85.14.15.13   0    student   4    6000MB   g09    /home/student/Documents/gwork   # 10
+85.14.15.14   1    student   4    6000MB   g09    /home/student/Documents/gwork   # 11
+85.14.15.18   1    student   4    6000MB   g09    /home/student/Documents/gwork   # 12

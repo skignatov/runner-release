@@ -1,0 +1,10 @@
+%Nproc=63
+%Mem=16000MB
+%chk=mg.chk
+%NoSave%
+# bp86/6-31G(d) FOpt SCF=(xqc,MaxCycle=300)
+
+gjf-pattern file
+
+0 1
+%GEO%
